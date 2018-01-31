@@ -1,4 +1,4 @@
-package com.phpbae.factory_ex.product;
+package com.phpbae.factory_method_ex.product;
 
 public class CellPhone implements Product {
 

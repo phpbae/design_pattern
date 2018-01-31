@@ -1,7 +1,7 @@
-package com.phpbae.factory_ex;
+package com.phpbae.factory_method_ex;
 
-import com.phpbae.factory_ex.food.Food;
-import com.phpbae.factory_ex.product.Product;
+import com.phpbae.factory_method_ex.food.Food;
+import com.phpbae.factory_method_ex.product.Product;
 
 public abstract class Factory {
 

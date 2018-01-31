@@ -1,9 +1,9 @@
-package com.phpbae.factory_ex;
+package com.phpbae.factory_method_ex;
 
-import com.phpbae.factory_ex.food.Food;
-import com.phpbae.factory_ex.food.Pizza;
-import com.phpbae.factory_ex.food.Ramen;
-import com.phpbae.factory_ex.product.Product;
+import com.phpbae.factory_method_ex.food.Food;
+import com.phpbae.factory_method_ex.food.Pizza;
+import com.phpbae.factory_method_ex.food.Ramen;
+import com.phpbae.factory_method_ex.product.Product;
 
 public class FoodFactory extends Factory {
     @Override
@@ -32,7 +32,7 @@ public class FoodFactory extends Factory {
 
     @Override
     public Food createFood2(String name) {
-        final String PACKAGE_PATH = "com.phpbae.factory_ex.food.";
+        final String PACKAGE_PATH = "com.phpbae.factory_method_ex.food.";
 
         try {
             return (Food) Class.forName(PACKAGE_PATH + name).newInstance();

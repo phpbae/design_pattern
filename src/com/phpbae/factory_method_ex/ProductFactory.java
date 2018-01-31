@@ -1,9 +1,9 @@
-package com.phpbae.factory_ex;
+package com.phpbae.factory_method_ex;
 
-import com.phpbae.factory_ex.food.Food;
-import com.phpbae.factory_ex.product.CellPhone;
-import com.phpbae.factory_ex.product.Computer;
-import com.phpbae.factory_ex.product.Product;
+import com.phpbae.factory_method_ex.food.Food;
+import com.phpbae.factory_method_ex.product.CellPhone;
+import com.phpbae.factory_method_ex.product.Computer;
+import com.phpbae.factory_method_ex.product.Product;
 
 public class ProductFactory extends Factory {
 
@@ -25,7 +25,7 @@ public class ProductFactory extends Factory {
 
     @Override
     public Product createProduct2(String name) {
-        final String PACKAGE_PATH = "com.phpbae.factory_ex.product.";
+        final String PACKAGE_PATH = "com.phpbae.factory_method_ex.product.";
 
         try {
             return (Product) Class.forName(PACKAGE_PATH + name).newInstance();

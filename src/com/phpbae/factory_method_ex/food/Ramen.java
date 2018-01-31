@@ -1,4 +1,4 @@
-package com.phpbae.factory_ex.food;
+package com.phpbae.factory_method_ex.food;
 
 public class Ramen implements Food {
 
